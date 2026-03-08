@@ -1,0 +1,386 @@
+<!doctype html><html><head><meta charset='utf-8'>
+
+<style>
+  body { font-family: Arial, sans-serif; max-width: 980px; margin: 40px auto; line-height: 1.55; padding: 0 16px; }
+  h1 { font-size: 34px; margin-bottom: 6px; }
+  h2 { font-size: 22px; margin-top: 0; color: #222; }
+  h3 { font-size: 20px; margin: 0 0 12px 0; }
+  .muted { color: #666; font-size: 13px; }
+  .wrap { white-space: normal; overflow-wrap: anywhere; word-break: break-word; }
+  hr { margin: 22px 0; }
+  a { text-decoration: underline; }
+
+  /* TOC */
+  .index { border: 1px solid #c8c8c8; border-radius: 14px; padding: 14px 16px; background: #fafafa; }
+  .index h3 { margin: 0 0 10px 0; }
+  .index ul { margin: 0; padding-left: 18px; column-count: 3; column-gap: 28px; }
+  .index li { break-inside: avoid; margin: 6px 0; }
+  @media (max-width: 820px) { .index ul { column-count: 2; } }
+  @media (max-width: 520px) { .index ul { column-count: 1; } }
+
+  /* Country wrapper */
+  .country { border: 1px solid #d6d6d6; border-radius: 14px; padding: 14px 14px 10px; margin: 18px 0 22px; background: #fff; }
+  .country-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+  .country-head .muted { font-size: 13px; }
+
+  /* Two-column cards grid per country */
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  @media (max-width: 720px) { .cards { grid-template-columns: 1fr; } }
+
+  /* Recall card */
+  .card { margin: 0; padding: 12px 14px; border: 1px solid #e0e0e0; border-radius: 12px; background: #fafafa;
+          display: flex; flex-direction: column; }
+  .subject { font-weight: 700; margin: 0 0 8px 0; }
+  .meta { font-size: 13px; color: #333; margin: 0 0 6px 0; }
+  .haz { font-size: 13px; margin: 0; }
+  .ref { margin-top: auto; padding-top: 10px; border-top: 1px solid #e3e3e3; font-size: 12.5px; color: #555; }
+
+  .backtop { margin: 10px 0 0; }
+@media print {
+  /* Page + typography tuned for PDF */
+  body { max-width: none; margin: 0; padding: 0; }
+  h1 { font-size: 26px; margin: 0 0 8px 0; }
+  h2 { font-size: 14px; margin: 0 0 10px 0; }
+  h3 { font-size: 16px; margin: 0 0 10px 0; }
+
+  /* Single column for print */
+  .cards { grid-template-columns: 1fr !important; gap: 10px !important; }
+
+  /* Tighten containers */
+  .country { margin: 10px 0 12px !important; padding: 10px 10px 8px !important; }
+  .card { padding: 10px 12px !important; background: #fff !important; }
+
+  /* Keep each recall card intact */
+  .card { break-inside: avoid; page-break-inside: avoid; }
+
+  /* Try to keep a whole country together *when it fits*.
+     If a country is longer than a page, it will still split (that’s unavoidable). */
+  .country { break-inside: avoid; page-break-inside: avoid; }
+
+  /* Reduce visual noise */
+  .ref { padding-top: 8px !important; }
+  a { color: #000; text-decoration: underline; }
+}
+
+</style>
+
+</head><body>
+<a id='top'></a>
+<h1>RASFF Product Recall Brief</h1>
+<h2>February 24, 2026 – March 02, 2026</h2>
+<p><b>14 recalls</b> in this reporting period.</p>
+<p class='muted'>
+<strong>Methodological note:</strong> 
+This report summarizes RASFF consumer portal recall notifications concerning All EU member countries. It may not capture recalls handled exclusively at national level. Readers should consult national competent authorities, local media, or individual country pages on the RASFF consumer portal for country-specific recall information.
+</p>
+<div class='index wrap'>
+<h3>EU country index (mentions)</h3>
+<ul>
+<li><a href='#france'>France</a> <span class='muted'>(3)</span></li>
+<li><a href='#spain'>Spain</a> <span class='muted'>(3)</span></li>
+<li><a href='#germany'>Germany</a> <span class='muted'>(3)</span></li>
+<li><a href='#denmark'>Denmark</a> <span class='muted'>(2)</span></li>
+<li><a href='#netherlands'>Netherlands</a> <span class='muted'>(2)</span></li>
+<li><a href='#austria'>Austria</a> <span class='muted'>(2)</span></li>
+<li><a href='#portugal'>Portugal</a> <span class='muted'>(2)</span></li>
+<li><a href='#italy'>Italy</a> <span class='muted'>(2)</span></li>
+<li><a href='#finland'>Finland</a> <span class='muted'>(1)</span></li>
+<li><a href='#sweden'>Sweden</a> <span class='muted'>(1)</span></li>
+<li><a href='#ireland'>Ireland</a> <span class='muted'>(1)</span></li>
+<li><a href='#poland'>Poland</a> <span class='muted'>(1)</span></li>
+<li><a href='#luxembourg'>Luxembourg</a> <span class='muted'>(1)</span></li>
+<li><a href='#romania'>Romania</a> <span class='muted'>(1)</span></li>
+<li><a href='#czechia'>Czechia</a> <span class='muted'>(1)</span></li>
+<li><a href='#slovakia'>Slovakia</a> <span class='muted'>(1)</span></li>
+</ul>
+</div>
+<div class='country wrap' id='france'>
+<div class='country-head'>
+<h3>France</h3>
+<span class='muted'>(3 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Shiga toxin-producing Escherichia coli (STEC) in bovine meat from Belgium</div>
+<div class='meta'><b>Category:</b> meat and meat products (other than poultry) &nbsp;&middot;&nbsp; <b>Origin:</b> Belgium</div>
+<div class='haz'><b>Hazards:</b> Escherichia coli  enteropathogenic - {pathogenic micro-organisms}</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/827221' target='_blank' rel='noopener noreferrer'>2026.1683</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Presencia de cuerpo extraño (astillas de madera) en queso rallado procedente de España  //  Possible presence of foreign body in grated cheese from Spain</div>
+<div class='meta'><b>Category:</b> milk and milk products &nbsp;&middot;&nbsp; <b>Origin:</b> Spain</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825578' target='_blank' rel='noopener noreferrer'>2026.1657</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Migration of lead and phthalates (DBP+DIBP) from cardboard plates from Spain</div>
+<div class='meta'><b>Category:</b> food contact materials &nbsp;&middot;&nbsp; <b>Origin:</b> Spain</div>
+<div class='haz'><b>Hazards:</b> lead  migration - {migration},phthalate DBP - dibutyl migration - {migration},phthalate DIBP - diisobutyl migration - {migration}</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825952' target='_blank' rel='noopener noreferrer'>2026.1530</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='spain'>
+<div class='country-head'>
+<h3>Spain</h3>
+<span class='muted'>(3 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Presencia de sulfitos no declarados en el etiquetado de endulzante de origen natural//Presence of undeclared sulphites in the labelling of natural sweeteners</div>
+<div class='meta'><b>Category:</b> food additives and flavourings &nbsp;&middot;&nbsp; <b>Origin:</b> Indonesia,Spain</div>
+<div class='haz'><b>Hazards:</b> sulphite  undeclared - {allergens}</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/824733' target='_blank' rel='noopener noreferrer'>2026.1678</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Presencia de cuerpo extraño (astillas de madera) en queso rallado procedente de España  //  Possible presence of foreign body in grated cheese from Spain</div>
+<div class='meta'><b>Category:</b> milk and milk products &nbsp;&middot;&nbsp; <b>Origin:</b> Spain</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825578' target='_blank' rel='noopener noreferrer'>2026.1657</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Envasado erróneo en complemento alimenticio procedente de Alemania / Incorrect packaging of food supplement from Germany</div>
+<div class='meta'><b>Category:</b> dietetic foods, food supplements and fortified foods &nbsp;&middot;&nbsp; <b>Origin:</b> Germany</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/826147' target='_blank' rel='noopener noreferrer'>2026.1569</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='germany'>
+<div class='country-head'>
+<h3>Germany</h3>
+<span class='muted'>(3 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Undeclared allergen milk in soy product from Germany</div>
+<div class='meta'><b>Category:</b> other food product / mixed &nbsp;&middot;&nbsp; <b>Origin:</b> Germany</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/827041' target='_blank' rel='noopener noreferrer'>2026.1668</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Listeria monocytogenes in cheese from Italy</div>
+<div class='meta'><b>Category:</b> milk and milk products &nbsp;&middot;&nbsp; <b>Origin:</b> Italy</div>
+<div class='haz'><b>Hazards:</b> Listeria monocytogenes  - {pathogenic micro-organisms}</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/826371' target='_blank' rel='noopener noreferrer'>2026.1573</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Foreign bodies (glass and plastic fragments) in various organic broths from Germany</div>
+<div class='meta'><b>Category:</b> soups, broths, sauces and condiments &nbsp;&middot;&nbsp; <b>Origin:</b> Germany</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825990' target='_blank' rel='noopener noreferrer'>2026.1535</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='denmark'>
+<div class='country-head'>
+<h3>Denmark</h3>
+<span class='muted'>(2 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Presence of plastic pieces in chocolate</div>
+<div class='meta'><b>Category:</b> cocoa and cocoa preparations, coffee and tea &nbsp;&middot;&nbsp; <b>Origin:</b> Sweden</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/827509' target='_blank' rel='noopener noreferrer'>2026.1721</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Food supplements containing Ashwagandha and unauthorised health and disease claims sold by a Swedish company</div>
+<div class='meta'><b>Category:</b> dietetic foods, food supplements and fortified foods &nbsp;&middot;&nbsp; <b>Origin:</b> unknown origin</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/826088' target='_blank' rel='noopener noreferrer'>2026.1591</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='netherlands'>
+<div class='country-head'>
+<h3>Netherlands</h3>
+<span class='muted'>(2 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Shiga toxin-producing Escherichia coli (STEC) in bovine meat from Belgium</div>
+<div class='meta'><b>Category:</b> meat and meat products (other than poultry) &nbsp;&middot;&nbsp; <b>Origin:</b> Belgium</div>
+<div class='haz'><b>Hazards:</b> Escherichia coli  enteropathogenic - {pathogenic micro-organisms}</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/827221' target='_blank' rel='noopener noreferrer'>2026.1683</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Piece of plastic in chocolate from Belgium</div>
+<div class='meta'><b>Category:</b> cocoa and cocoa preparations, coffee and tea &nbsp;&middot;&nbsp; <b>Origin:</b> Belgium</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/826343' target='_blank' rel='noopener noreferrer'>2026.1604</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='austria'>
+<div class='country-head'>
+<h3>Austria</h3>
+<span class='muted'>(2 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Undeclared allergen milk in soy product from Germany</div>
+<div class='meta'><b>Category:</b> other food product / mixed &nbsp;&middot;&nbsp; <b>Origin:</b> Germany</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/827041' target='_blank' rel='noopener noreferrer'>2026.1668</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Foreign bodies (glass and plastic fragments) in various organic broths from Germany</div>
+<div class='meta'><b>Category:</b> soups, broths, sauces and condiments &nbsp;&middot;&nbsp; <b>Origin:</b> Germany</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825990' target='_blank' rel='noopener noreferrer'>2026.1535</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='portugal'>
+<div class='country-head'>
+<h3>Portugal</h3>
+<span class='muted'>(2 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Presencia de cuerpo extraño (astillas de madera) en queso rallado procedente de España  //  Possible presence of foreign body in grated cheese from Spain</div>
+<div class='meta'><b>Category:</b> milk and milk products &nbsp;&middot;&nbsp; <b>Origin:</b> Spain</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825578' target='_blank' rel='noopener noreferrer'>2026.1657</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Foreign bodies (glass and plastic fragments) in various organic broths from Germany</div>
+<div class='meta'><b>Category:</b> soups, broths, sauces and condiments &nbsp;&middot;&nbsp; <b>Origin:</b> Germany</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825990' target='_blank' rel='noopener noreferrer'>2026.1535</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='italy'>
+<div class='country-head'>
+<h3>Italy</h3>
+<span class='muted'>(2 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Potential Norovirus in Oysters</div>
+<div class='meta'><b>Category:</b> bivalve molluscs and products thereof &nbsp;&middot;&nbsp; <b>Origin:</b> France</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825968' target='_blank' rel='noopener noreferrer'>2026.1545</a></div>
+</div>
+<div class='card'>
+<div class='subject'>Foreign bodies (glass and plastic fragments) in various organic broths from Germany</div>
+<div class='meta'><b>Category:</b> soups, broths, sauces and condiments &nbsp;&middot;&nbsp; <b>Origin:</b> Germany</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825990' target='_blank' rel='noopener noreferrer'>2026.1535</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='finland'>
+<div class='country-head'>
+<h3>Finland</h3>
+<span class='muted'>(1 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Presence of plastic pieces in chocolate</div>
+<div class='meta'><b>Category:</b> cocoa and cocoa preparations, coffee and tea &nbsp;&middot;&nbsp; <b>Origin:</b> Sweden</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/827509' target='_blank' rel='noopener noreferrer'>2026.1721</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='sweden'>
+<div class='country-head'>
+<h3>Sweden</h3>
+<span class='muted'>(1 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Presence of plastic pieces in chocolate</div>
+<div class='meta'><b>Category:</b> cocoa and cocoa preparations, coffee and tea &nbsp;&middot;&nbsp; <b>Origin:</b> Sweden</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/827509' target='_blank' rel='noopener noreferrer'>2026.1721</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='ireland'>
+<div class='country-head'>
+<h3>Ireland</h3>
+<span class='muted'>(1 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Improperly declared allergens in various FSMP products</div>
+<div class='meta'><b>Category:</b> dietetic foods, food supplements and fortified foods &nbsp;&middot;&nbsp; <b>Origin:</b> United Kingdom</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/827195' target='_blank' rel='noopener noreferrer'>2026.1696</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='poland'>
+<div class='country-head'>
+<h3>Poland</h3>
+<span class='muted'>(1 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Presencia de sulfitos no declarados en el etiquetado de endulzante de origen natural//Presence of undeclared sulphites in the labelling of natural sweeteners</div>
+<div class='meta'><b>Category:</b> food additives and flavourings &nbsp;&middot;&nbsp; <b>Origin:</b> Indonesia,Spain</div>
+<div class='haz'><b>Hazards:</b> sulphite  undeclared - {allergens}</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/824733' target='_blank' rel='noopener noreferrer'>2026.1678</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='luxembourg'>
+<div class='country-head'>
+<h3>Luxembourg</h3>
+<span class='muted'>(1 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Foreign bodies (glass and plastic fragments) in various organic broths from Germany</div>
+<div class='meta'><b>Category:</b> soups, broths, sauces and condiments &nbsp;&middot;&nbsp; <b>Origin:</b> Germany</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825990' target='_blank' rel='noopener noreferrer'>2026.1535</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='romania'>
+<div class='country-head'>
+<h3>Romania</h3>
+<span class='muted'>(1 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Foreign bodies (glass and plastic fragments) in various organic broths from Germany</div>
+<div class='meta'><b>Category:</b> soups, broths, sauces and condiments &nbsp;&middot;&nbsp; <b>Origin:</b> Germany</div>
+<div class='ref'><b>Ref:</b> <a href='https://webgate.ec.europa.eu/rasff-window/screen/notification/825990' target='_blank' rel='noopener noreferrer'>2026.1535</a></div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='czechia'>
+<div class='country-head'>
+<h3>Czechia</h3>
+<span class='muted'>(1 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Detection of cereulide in infant formula from Estonia</div>
+<div class='meta'><b>Category:</b> dietetic foods, food supplements and fortified foods &nbsp;&middot;&nbsp; <b>Origin:</b> Estonia</div>
+<div class='haz'><b>Hazards:</b> cereulide  - {natural toxins (other)}</div>
+<div class='ref'><b>Ref:</b> 2026.1513</div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<div class='country wrap' id='slovakia'>
+<div class='country-head'>
+<h3>Slovakia</h3>
+<span class='muted'>(1 mentions)</span>
+</div>
+<div class='cards'>
+<div class='card'>
+<div class='subject'>Detection of cereulide in infant formula from Estonia</div>
+<div class='meta'><b>Category:</b> dietetic foods, food supplements and fortified foods &nbsp;&middot;&nbsp; <b>Origin:</b> Estonia</div>
+<div class='haz'><b>Hazards:</b> cereulide  - {natural toxins (other)}</div>
+<div class='ref'><b>Ref:</b> 2026.1513</div>
+</div>
+</div>
+<p class='muted backtop'><a href='#top'>Back to top</a></p>
+</div>
+<hr>
+<p class='muted'>Source: RASFF consumer portal export. Attribution uses distribution field (fallback: notifying country). Reference links captured during download.</p>
+</body></html>
